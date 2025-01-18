@@ -19,6 +19,8 @@
 //2. Session Storage
 //Session Storage works like Local Storage, but it only stores data in one session. When the browser tab or window is closed, the data is deleted. Session Storage is more efficient for storing intermediate data that should not be persistent.
 // მონაცემების შენახვა
+// /Preserving User Input: Save form data temporarily so users don't lose it if the page reloads.
+
 // sessionStorage.setItem('key', 'value');
 
 // // მონაცემების აღება
@@ -30,7 +32,7 @@
 // // მთელი Session Storage-ის გაწმენდა
 // sessionStorage.clear();
 
-//cookies Cookies: Used mainly to store domain-specific data, although their size is limited (up to 4KB) and they include characters that come with each HTTP request. Cookies are often used for authentication.
+//cookies Cookies: Used mainly to store domain-specific data,and they include characters that come with each HTTP request. Cookies are often used for authentication.
 
 // Main features of cookies:
 // Settings: Cookies are stored according to one specific domain.
@@ -48,3 +50,13 @@
 // If security is a top priority for you, then Cookies are a more reliable choice, especially using the HttpOnly and Secure settings.
 // If you only need to store data temporarily and you don't want data to be transferred with HTTP requests, then localStorage or sessionStorage would be better.
 // However, localStorage and sessionStorage are not protected against XSS attacks, so their use for sensitive data is not recommended.
+//  const intervalId =  setInterval(() => { console.log("Hello every 2 seconds"); }, 2000);
+// setTimeout(()=> {
+//     clearInterval(intervalId)
+//     console.log('interval cleared')
+// })
+const currentDate = new Date()
+const day = currentDate.getDate()
+const month = currentDate.getMonth()+1
+const year = currentDate.getFullYear()
+console.log(year)

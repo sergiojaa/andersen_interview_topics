@@ -12,6 +12,26 @@
 // }
 // person.sayMyName()
 
+//1. Creating and Accessing Objects and Arrays
+//Objects
+//Objects are used to store data, where each property has a name (key) and a corresponding value (value).
+// const person = {
+//     name: 'Sergi',
+//     age: 25,
+//     greet: function() {
+//       console.log('Hello!');
+//     }
+//   };
+  
+//   // Accessing properties
+//   console.log(person.name);  // Output: Sergi
+//   console.log(person['age']);  // Output: 25
+  
+//   // Calling method
+//   person.greet();  // Output: Hello!
+
+//arrays
+
 //prototypes - ჩაშენებული ფუნქციებივით არის
 //create ქმნის ახალ ობიექტს
 // let protoRabbit = {
